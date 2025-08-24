@@ -40,6 +40,13 @@ module.exports = {
                     filename: 'fonts/[name][ext]',
                 },
             },
+            {
+                test: /\.svg$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/svg/[name][ext]',
+                },
+            },
         ],
     },
     plugins: [

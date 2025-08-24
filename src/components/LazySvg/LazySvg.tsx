@@ -1,6 +1,7 @@
 import type { CSSProperties } from 'react';
 import { ReactSVG } from 'react-svg';
-import React, {memo} from "react";
+import React from "react";
+import ArrowSvg from '@assets/svg/Arrow.svg';
 
 interface LazySvgProps {
   name: string;
@@ -14,12 +15,13 @@ interface LazySvgProps {
 }
 
 export const LazySvg = ({ name, className, style, height, width, onClick, onMouseEnter, onMouseLeave }: LazySvgProps) => {
+
   return (
     <ReactSVG
       onClick={onClick}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
-      src={`/svg/${name}.svg`}
+      src={ArrowSvg}
       style={style}
       beforeInjection={(svg) => {
         if(!width || !height) return
