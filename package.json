@@ -1,10 +1,13 @@
 {
-  "name": "only-digital",
+  "homepage": "https://izotikov.github.io/Data-slider",
+  "name": "izotikov-data-slider",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +26,7 @@
     "@types/react-dom": "^19.1.7",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^7.1.2",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.6.4",
     "sass": "^1.90.0",
     "sass-loader": "^16.0.5",
