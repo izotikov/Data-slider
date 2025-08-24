@@ -1,0 +1,16 @@
+.arrow-button {
+  border-radius: 50%;
+  padding: 0;
+  z-index: 10;
+  cursor: pointer;
+  line-height: 0;
+}
+.arrow-button__left {
+  transform: rotate(180deg);
+}
+.disabled {
+  cursor: initial;
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=ArrowButton.css.map */

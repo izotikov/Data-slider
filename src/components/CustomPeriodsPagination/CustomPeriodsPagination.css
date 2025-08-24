@@ -1,0 +1,21 @@
+.pagination-container {
+  display: flex;
+  gap: 10px;
+}
+.pagination-container__dot {
+  width: 6px;
+  height: 6px;
+  background: var(--color-black-blue);
+  border-radius: 50%;
+  opacity: 0.4;
+}
+.pagination-container__dot.active {
+  opacity: 1;
+}
+@media screen and (min-width: 768px) {
+  .pagination-container {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=CustomPeriodsPagination.css.map */

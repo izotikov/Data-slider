@@ -1,0 +1,29 @@
+.change-period-buttons__container {
+  display: flex;
+  gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .change-period-buttons__container {
+    gap: 8px;
+    transform: scale(0.5);
+    transform-origin: top left;
+  }
+}
+.change-period-buttons__container__prev {
+  background-color: transparent;
+  border: 1px solid rgba(var(--color-black-blue-rgb), 0.5);
+}
+.change-period-buttons__container__prev:hover {
+  transition: background-color 0.3s ease-in-out;
+  background-color: white;
+}
+.change-period-buttons__container__next {
+  background-color: transparent;
+  border: 1px solid rgba(var(--color-black-blue-rgb), 0.5);
+}
+.change-period-buttons__container__next:hover {
+  transition: background-color 0.3s ease-in-out;
+  background-color: white;
+}
+
+/*# sourceMappingURL=ChangePeriodButtons.css.map */

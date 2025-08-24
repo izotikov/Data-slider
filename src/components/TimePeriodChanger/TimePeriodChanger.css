@@ -1,0 +1,22 @@
+.time-period-changer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-self: start;
+  padding-left: 80px;
+}
+@media screen and (max-width: 768px) {
+  .time-period-changer__container {
+    min-width: 0;
+    padding-left: 20px;
+    justify-self: start;
+    width: 90%;
+  }
+  .time-period-changer__container__wrapper-buttons-and-pagination {
+    display: flex;
+    gap: 25px;
+    justify-content: start;
+  }
+}
+
+/*# sourceMappingURL=TimePeriodChanger.css.map */

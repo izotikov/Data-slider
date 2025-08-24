@@ -1,0 +1,21 @@
+.pagination-container {
+  display: flex;
+  gap: 10px;
+
+  &__dot {
+    width: 6px;
+    height: 6px;
+    background: var(--color-black-blue);
+    border-radius: 50%;
+    opacity: 0.4;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    display: none;
+    
+  }
+}

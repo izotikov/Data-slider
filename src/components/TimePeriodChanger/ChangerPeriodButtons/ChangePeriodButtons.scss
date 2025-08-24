@@ -1,0 +1,30 @@
+.change-period-buttons__container {
+  display: flex;
+  gap: 20px;
+  
+  @media screen and (max-width: 768px) {
+    gap: 8px;
+    transform:scale(0.5);
+    transform-origin:top left;
+  }
+  
+  &__prev {
+    background-color: transparent;
+    border: 1px solid rgba(var(--color-black-blue-rgb), 0.5);
+
+    &:hover {
+      transition: background-color 0.3s ease-in-out;
+      background-color: white;
+    }
+  }
+
+  &__next {
+    background-color: transparent;
+    border: 1px solid rgba(var(--color-black-blue-rgb), 0.5);
+
+    &:hover {
+      transition: background-color 0.3s ease-in-out;
+      background-color: white;
+    }
+  }
+}
