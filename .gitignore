@@ -1,6 +1,6 @@
 # Node modules, сборки и артефакты
 node_modules/
-dist/
+build/
 
 # Лог файлы
 *.log
